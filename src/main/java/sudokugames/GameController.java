@@ -2,10 +2,9 @@ package sudokugames;
 
 
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import javax.swing.JOptionPane;
 
 public class GameController implements ActionListener {
 
@@ -23,7 +22,7 @@ public class GameController implements ActionListener {
         String message;
 
         if(command.equals("back")) {
-            vista.changeGamePanel(new Menu(vista));
+            vista.changeGamePanel(new Menu(vista, null));
         } else if(command.equals("finish")) {
             System.out.println("Game finished");
         }
@@ -48,13 +47,15 @@ public class GameController implements ActionListener {
         }
     }
 
-    public void verify(int a, int b, int c) {
+    public boolean verify(int a, int b, int c) {
+        boolean answer = false;
         if (a==1 && b==7  && c==4) {
             JOptionPane.showMessageDialog(null, MESSAGE_WON,"won" ,JOptionPane.INFORMATION_MESSAGE);
+            answer = true;
         }
         else {
             JOptionPane.showMessageDialog(null, MESSAGE_LOST,"fail" ,JOptionPane.INFORMATION_MESSAGE);
         }
+        return answer;
     }
 }
-

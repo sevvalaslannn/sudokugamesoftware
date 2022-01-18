@@ -9,9 +9,10 @@ import java.awt.event.ActionListener;
 public class MenuController implements ActionListener {
 
     Main vista;
-
-    public MenuController(Main vista) {
+    private final Game game;
+    public MenuController(Main vista, Game game) {
         this.vista = vista;
+        this.game = game;
     }
 
     @Override
@@ -57,7 +58,7 @@ public class MenuController implements ActionListener {
                 break;
             case "game10":
                 System.out.println("IS  PRESSING GAME 10");
-                //vista.changeGamePanel(new GameTen(vista));
+                vista.changeGamePanel(new GameTen(vista));
                 break;
         }
     }

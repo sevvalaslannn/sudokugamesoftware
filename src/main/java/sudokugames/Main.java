@@ -25,7 +25,7 @@ public class Main extends JFrame {
     private Container createMenu() {
         mainPanel = new JPanel(new BorderLayout());
 
-        mainPanel.add(new Menu(this), BorderLayout.CENTER);
+        mainPanel.add(new Menu(this,null), BorderLayout.CENTER);
         return mainPanel;
     }
 

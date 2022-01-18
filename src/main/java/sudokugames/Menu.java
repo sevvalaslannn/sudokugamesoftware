@@ -1,9 +1,6 @@
 package sudokugames;
 
-
-
 import javax.swing.*;
-
 import java.awt.*;
 
 public class Menu extends JPanel {
@@ -11,10 +8,12 @@ public class Menu extends JPanel {
     MenuController menuController;
     private final int MAX_GAMES = 10;
 
-    public Menu(Main vista) {
+
+    public Menu(Main vista, Game game) {
         super();
         this.vista = vista;
-        menuController = new MenuController(vista);
+        menuController = new MenuController(vista, null);
+
         this.setLayout(new GridLayout(5,5));
         for (int i = 1; i <= MAX_GAMES; i++) {
             this.add(createMenuPanel(i, "Game - " + i));
