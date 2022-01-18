@@ -29,31 +29,31 @@ public class MenuController implements ActionListener {
                 break;
             case "game3":
                 System.out.println("IS  PRESSING GAME 3");
-                //vista.changeGamePanel(new GameThree(vista));
+                vista.changeGamePanel(new GameThree(vista));
                 break;
             case "game4":
                 System.out.println("IS  PRESSING GAME 4");
-                //vista.changeGamePanel(new GameFour(vista));
+                vista.changeGamePanel(new GameFour(vista));
                 break;
             case "game5":
                 System.out.println("IS  PRESSING GAME 5");
-                //vista.changeGamePanel(new GameFive(vista));
+                vista.changeGamePanel(new GameFive(vista));
                 break;
             case "game6":
                 System.out.println("IS  PRESSING GAME 6");
-                //vista.changeGamePanel(new GameSix(vista));
+                vista.changeGamePanel(new GameSix(vista));
                 break;
             case "game7":
                 System.out.println("IS  PRESSING GAME 7");
-                //vista.changeGamePanel(new GameSeven(vista));
+                vista.changeGamePanel(new GameSeven(vista));
                 break;
             case "game8":
                 System.out.println("IS  PRESSING GAME 8");
-                //vista.changeGamePanel(new GameEight(vista));
+                vista.changeGamePanel(new GameEight(vista));
                 break;
             case "game9":
                 System.out.println("IS  PRESSING GAME 9");
-                //vista.changeGamePanel(new GameNine(vista));
+                vista.changeGamePanel(new GameNine(vista));
                 break;
             case "game10":
                 System.out.println("IS  PRESSING GAME 10");
