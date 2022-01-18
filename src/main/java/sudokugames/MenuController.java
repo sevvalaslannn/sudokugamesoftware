@@ -25,7 +25,7 @@ public class MenuController implements ActionListener {
                 break;
             case "game2":
                 System.out.println("IS  PRESSING GAME 2");
-                // vista.changeGamePanel(new GameTwo(vista));
+                vista.changeGamePanel(new GameTwo(vista));
                 break;
             case "game3":
                 System.out.println("IS  PRESSING GAME 3");

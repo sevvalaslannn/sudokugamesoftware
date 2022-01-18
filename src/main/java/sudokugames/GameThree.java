@@ -5,21 +5,21 @@ package sudokugames;
 import javax.swing.*;
 import java.awt.*;
 
-public class GameTwo extends JPanel {
+public class GameThree extends JPanel {
     Main vista;
     GameController gameController;
     JButton b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28,b29,b30,b31,b32,b33,b34,b35,b36,b37,b38,b39,b40,b41,b42,b43,b44,b45,b46,b47,b48,b49,b50,b51,b52,b53,b54,b55,b56,b57,b58,b59,b60,b61,b62,b63,b64,b65,b66,b67,b68,b69,b70,b71,b72,b73,b74,b75,b76,b77,b78,b79,b80,b81,finish;
     JButton back;
 
-    public GameTwo(Main vista) {
+    public GameThree(Main vista) {
         this.setLayout(new BorderLayout());
         this.vista = vista;
         gameController = new GameController(vista);
         this.add(createPanel());
     }
-      // c lerin hepsi gizli c yi bulmak kolay sonra a yi bul sonra b zaten ortaya  cikar
-    private Component createPanel() {
 
+    private Component createPanel() {
+// tum c ler yok c yi bulduktan sonra a yi ilk yerden bulursun
         JPanel panel = new JPanel();
         b1=new JButton("6");
         b2=new JButton("8");
@@ -230,174 +230,174 @@ public class GameTwo extends JPanel {
         add(back);
 
         b1.addActionListener(gameController);
-        b1.setBackground(Color.PINK);
+        b1.setBackground(Color.BLUE);
         b2.addActionListener(gameController);
-        b2.setBackground(Color.PINK);
+        b2.setBackground(Color.BLUE);
         b3.addActionListener(gameController);
-        b3.setBackground(Color.PINK);
+        b3.setBackground(Color.BLUE);
         b4.addActionListener(gameController);
-        b4.setBackground(Color.RED);
+        b4.setBackground(Color.YELLOW);
         b5.addActionListener(gameController);
-        b5.setBackground(Color.RED);
+        b5.setBackground(Color.YELLOW);
         b6.addActionListener(gameController);
-        b6.setBackground(Color.RED);
+        b6.setBackground(Color.YELLOW);
         b7.addActionListener(gameController);
-        b7.setBackground(Color.PINK);
+        b7.setBackground(Color.BLUE);
         b8.addActionListener(gameController);
-        b8.setBackground(Color.PINK);
+        b8.setBackground(Color.BLUE);
         b9.addActionListener(gameController);
-        b9.setBackground(Color.PINK);
+        b9.setBackground(Color.BLUE);
 
         b10.addActionListener(gameController);
-        b10.setBackground(Color.PINK);
+        b10.setBackground(Color.BLUE);
         b11.addActionListener(gameController);
-        b11.setBackground(Color.PINK);
+        b11.setBackground(Color.BLUE);
         b12.addActionListener(gameController);
-        b12.setBackground(Color.PINK);
+        b12.setBackground(Color.BLUE);
         b13.addActionListener(gameController);
-        b13.setBackground(Color.RED);
+        b13.setBackground(Color.YELLOW);
         b14.addActionListener(gameController);
-        b14.setBackground(Color.RED);
+        b14.setBackground(Color.YELLOW);
         b15.addActionListener(gameController);
-        b15.setBackground(Color.RED);
+        b15.setBackground(Color.YELLOW);
         b16.addActionListener(gameController);
-        b16.setBackground(Color.PINK);
+        b16.setBackground(Color.BLUE);
         b17.addActionListener(gameController);
-        b17.setBackground(Color.PINK);
+        b17.setBackground(Color.BLUE);
         b18.addActionListener(gameController);
-        b18.setBackground(Color.PINK);
+        b18.setBackground(Color.BLUE);
 
         b19.addActionListener(gameController);
-        b19.setBackground(Color.PINK);
+        b19.setBackground(Color.BLUE);
         b20.addActionListener(gameController);
-        b20.setBackground(Color.PINK);
+        b20.setBackground(Color.BLUE);
         b21.addActionListener(gameController);
-        b21.setBackground(Color.PINK);
+        b21.setBackground(Color.BLUE);
         b22.addActionListener(gameController);
-        b22.setBackground(Color.RED);
+        b22.setBackground(Color.YELLOW);
         b23.addActionListener(gameController);
-        b23.setBackground(Color.RED);
+        b23.setBackground(Color.YELLOW);
         b24.addActionListener(gameController);
-        b24.setBackground(Color.RED);
+        b24.setBackground(Color.YELLOW);
         b25.addActionListener(gameController);
-        b25.setBackground(Color.PINK);
+        b25.setBackground(Color.BLUE);
         b26.addActionListener(gameController);
-        b26.setBackground(Color.PINK);
+        b26.setBackground(Color.BLUE);
         b27.addActionListener(gameController);
-        b27.setBackground(Color.PINK);
+        b27.setBackground(Color.BLUE);
 
         b28.addActionListener(gameController);
-        b28.setBackground(Color.RED);
+        b28.setBackground(Color.YELLOW);
         b29.addActionListener(gameController);
-        b29.setBackground(Color.RED);
+        b29.setBackground(Color.YELLOW);
         b30.addActionListener(gameController);
-        b30.setBackground(Color.RED);
+        b30.setBackground(Color.YELLOW);
         b31.addActionListener(gameController);
-        b31.setBackground(Color.PINK);
+        b31.setBackground(Color.BLUE);
         b32.addActionListener(gameController);
-        b32.setBackground(Color.PINK);
+        b32.setBackground(Color.BLUE);
         b33.addActionListener(gameController);
-        b33.setBackground(Color.PINK);
+        b33.setBackground(Color.BLUE);
         b34.addActionListener(gameController);
-        b34.setBackground(Color.RED);
+        b34.setBackground(Color.YELLOW);
         b35.addActionListener(gameController);
-        b35.setBackground(Color.RED);
+        b35.setBackground(Color.YELLOW);
         b36.addActionListener(gameController);
-        b36.setBackground(Color.RED);
+        b36.setBackground(Color.YELLOW);
 
 
         b37.addActionListener(gameController);
-        b37.setBackground(Color.RED);
+        b37.setBackground(Color.YELLOW);
         b38.addActionListener(gameController);
-        b38.setBackground(Color.RED);
+        b38.setBackground(Color.YELLOW);
         b39.addActionListener(gameController);
-        b39.setBackground(Color.RED);
+        b39.setBackground(Color.YELLOW);
         b40.addActionListener(gameController);
-        b40.setBackground(Color.PINK);
+        b40.setBackground(Color.BLUE);
         b41.addActionListener(gameController);
-        b41.setBackground(Color.PINK);
+        b41.setBackground(Color.BLUE);
         b42.addActionListener(gameController);
-        b42.setBackground(Color.PINK);
+        b42.setBackground(Color.BLUE);
         b43.addActionListener(gameController);
-        b43.setBackground(Color.RED);
+        b43.setBackground(Color.YELLOW);
         b44.addActionListener(gameController);
-        b44.setBackground(Color.RED);
+        b44.setBackground(Color.YELLOW);
         b45.addActionListener(gameController);
-        b45.setBackground(Color.RED);
+        b45.setBackground(Color.YELLOW);
 
 
         b46.addActionListener(gameController);
-        b46.setBackground(Color.RED);
+        b46.setBackground(Color.YELLOW);
         b47.addActionListener(gameController);
-        b47.setBackground(Color.RED);
+        b47.setBackground(Color.YELLOW);
         b48.addActionListener(gameController);
-        b48.setBackground(Color.RED);
+        b48.setBackground(Color.YELLOW);
         b49.addActionListener(gameController);
-        b49.setBackground(Color.PINK);
+        b49.setBackground(Color.BLUE);
         b50.addActionListener(gameController);
-        b50.setBackground(Color.PINK);
+        b50.setBackground(Color.BLUE);
         b51.addActionListener(gameController);
-        b51.setBackground(Color.PINK);
+        b51.setBackground(Color.BLUE);
         b52.addActionListener(gameController);
-        b52.setBackground(Color.RED);
+        b52.setBackground(Color.YELLOW);
         b53.addActionListener(gameController);
-        b53.setBackground(Color.RED);
+        b53.setBackground(Color.YELLOW);
         b54.addActionListener(gameController);
-        b54.setBackground(Color.RED);
+        b54.setBackground(Color.YELLOW);
         b55.addActionListener(gameController);
-        b55.setBackground(Color.PINK);
+        b55.setBackground(Color.BLUE);
         b56.addActionListener(gameController);
-        b56.setBackground(Color.PINK);
+        b56.setBackground(Color.BLUE);
         b57.addActionListener(gameController);
-        b57.setBackground(Color.PINK);
+        b57.setBackground(Color.BLUE);
         b58.addActionListener(gameController);
-        b58.setBackground(Color.RED);
+        b58.setBackground(Color.YELLOW);
         b59.addActionListener(gameController);
-        b59.setBackground(Color.RED);
+        b59.setBackground(Color.YELLOW);
         b60.addActionListener(gameController);
-        b60.setBackground(Color.RED);
+        b60.setBackground(Color.YELLOW);
         b61.addActionListener(gameController);
-        b61.setBackground(Color.PINK);
+        b61.setBackground(Color.BLUE);
         b62.addActionListener(gameController);
-        b62.setBackground(Color.PINK);
+        b62.setBackground(Color.BLUE);
         b63.addActionListener(gameController);
-        b63.setBackground(Color.PINK);
+        b63.setBackground(Color.BLUE);
         b64.addActionListener(gameController);
-        b64.setBackground(Color.PINK);
+        b64.setBackground(Color.BLUE);
         b65.addActionListener(gameController);
-        b65.setBackground(Color.PINK);
+        b65.setBackground(Color.BLUE);
         b66.addActionListener(gameController);
-        b66.setBackground(Color.PINK);
+        b66.setBackground(Color.BLUE);
         b67.addActionListener(gameController);
-        b67.setBackground(Color.RED);
+        b67.setBackground(Color.YELLOW);
         b68.addActionListener(gameController);
-        b68.setBackground(Color.RED);
+        b68.setBackground(Color.YELLOW);
         b69.addActionListener(gameController);
-        b69.setBackground(Color.RED);
+        b69.setBackground(Color.YELLOW);
         b70.addActionListener(gameController);
-        b70.setBackground(Color.PINK);
+        b70.setBackground(Color.BLUE);
         b71.addActionListener(gameController);
-        b71.setBackground(Color.PINK);
+        b71.setBackground(Color.BLUE);
         b72.addActionListener(gameController);
-        b72.setBackground(Color.PINK);
+        b72.setBackground(Color.BLUE);
         b73.addActionListener(gameController);
-        b73.setBackground(Color.PINK);
+        b73.setBackground(Color.BLUE);
         b74.addActionListener(gameController);
-        b74.setBackground(Color.PINK);
+        b74.setBackground(Color.BLUE);
         b75.addActionListener(gameController);
-        b75.setBackground(Color.PINK);
+        b75.setBackground(Color.BLUE);
         b76.addActionListener(gameController);
-        b76.setBackground(Color.RED);
+        b76.setBackground(Color.YELLOW);
         b77.addActionListener(gameController);
-        b77.setBackground(Color.RED);
+        b77.setBackground(Color.YELLOW);
         b78.addActionListener(gameController);
-        b78.setBackground(Color.RED);
+        b78.setBackground(Color.YELLOW);
         b79.addActionListener(gameController);
-        b79.setBackground(Color.PINK);
+        b79.setBackground(Color.BLUE);
         b80.addActionListener(gameController);
-        b80.setBackground(Color.PINK);
+        b80.setBackground(Color.BLUE);
         b81.addActionListener(gameController);
-        b81.setBackground(Color.PINK);
+        b81.setBackground(Color.BLUE);
 
         finish.addActionListener(gameController);
         
@@ -410,4 +410,5 @@ public class GameTwo extends JPanel {
         return panel;
     }
 }
+
 
