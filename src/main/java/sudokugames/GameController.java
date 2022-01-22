@@ -28,19 +28,19 @@ public class GameController implements ActionListener {
         }
         else {
             Object valueA  = JOptionPane.showInputDialog("write the value of a: ");
-            if(valueA instanceof Integer) {
-                a = (Integer) valueA;
+            if(valueA instanceof String) {
+                a = Integer.valueOf((String) valueA);
             }
 
             Object valueB  = JOptionPane.showInputDialog("write the value of b: ");
-            if(valueB instanceof Integer) {
-                b = (Integer) valueB;
+            if(valueB instanceof String) {
+                b = Integer.valueOf((String)valueB);
             }
 
 
             Object valueC  = JOptionPane.showInputDialog("write the value of c: ");
-            if(valueC instanceof Integer) {
-                c = (Integer) valueC;
+            if(valueC instanceof String) {
+                c = Integer.valueOf((String) valueC);
             }
 
             verify(a,b,c);
@@ -59,3 +59,4 @@ public class GameController implements ActionListener {
         return answer;
     }
 }
+
